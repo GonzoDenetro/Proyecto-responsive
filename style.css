@@ -152,6 +152,7 @@ main .main__exchange-container {
 .main__currency-table--title-2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
+    margin-top: 25px;
     font-weight: bold;
     line-height: 2.3rem;
     color: var(--secondary-blue);
@@ -162,6 +163,7 @@ main .main__exchange-container {
     max-width: 300px;
     height: 250px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 .currency__table-container table {
     width: 100%;
@@ -216,4 +218,32 @@ main .main__exchange-container {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.currency-table--date {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: var(--soft-orange);
+    border-radius: 10px;
+}
+.currency-table--date p {
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.currency-table--date-2 {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: var(--soft-blue);
+    border-radius: 10px;
+}
+.currency-table--date-2 p {
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5rem;
 }
