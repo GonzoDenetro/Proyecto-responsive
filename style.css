@@ -149,6 +149,13 @@ main .main__exchange-container {
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
 }
+.main__currency-table--title-2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+}
 .currency__table-container {
     width: 90%;
     min-width: 230px;
