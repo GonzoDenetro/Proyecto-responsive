@@ -168,3 +168,45 @@ main .main__exchange-container {
     color: var(--grey);
     background-color: var(--white);
 }
+.table__top-left {
+    border: none;
+    border-top-left-radius: 10px;
+}
+.table__top-right {
+    border: none;
+    border-top-right-radius: 10px;
+}
+.table__bottom-left {
+    border: none;
+    border-bottom-left-radius: 10px;
+}
+.table__bottom-right {
+    border: none;
+    border-bottom-right-radius: 10px;
+}
+.currency__table-container .table-right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.down {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url(./assets/icons/trending-down.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.up {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url(./assets/icons/trending-up.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
