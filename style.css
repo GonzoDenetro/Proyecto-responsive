@@ -6,6 +6,7 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 /* VARIABLES */
 :root {
@@ -340,4 +341,84 @@ main .main__exchange-container {
     font-weight: 500;
     line-height: 1.8rem;
     color: #808080;
+}
+/* Fondo Bitcoin */
+.bitcoin-img__container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url(./assets/imgs/bitcoinbabyx2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bitcoin-img__container h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--white);
+    text-align: center;
+    padding-top: 50px;
+}
+/* Sección de planes */
+.main-plans__container {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding-bottom: 70px;
+    background-color: var(--off-white);
+}
+.main-plans__container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+}
+.main-plans__container--title h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+.main-plans__container--title p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+    margin-bottom: 30px;
+}
+.plans__container {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+.plans__container--card {
+    position: relative;
+    width: 190px;
+    height: 247px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+.container__card--recommended {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: calc(50% - 49px);
+    top: -10px;
+    padding: 8px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5rem;
+    color: var(--white);
+}
+.plans__container--card div {
+    padding-top: 30px;
 }
