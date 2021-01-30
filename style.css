@@ -390,16 +390,20 @@ main .main__exchange-container {
     color: #757575;
     margin-bottom: 50px;
 }
-.plans__container {
+/* .plans__container {
     width: 70%;
     height: auto;
     margin: 0 auto;
-}
-.plans__container--card {
+} */
+.plans__container--card,
+.plan__container--basic-card {
     position: relative;
-    width: 190px;
+    width: 70%;
+    min-width: 190px;
+    max-width: 250px;
     height: 247px;
-    margin: 0 auto;
+    margin: 50px auto 0;
+    padding: 0 15px;
     text-align: center;
     border-radius: 10px;
     background-color: var(--white);
@@ -412,55 +416,179 @@ main .main__exchange-container {
     left: calc(50% - 49px);
     top: -10px;
     padding: 8px;
-    background-color: var(--bitcoin-orange);
     border-radius: 10px;
+    background-color: var(--bitcoin-orange);
     font-size: 1.2rem;
     font-family: "Inter", sans-serif;
     line-height: 1.5rem;
     color: var(--white);
 }
-.plans__container--card div {
+.recommended__card--basic {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: -10px;
+    left: calc(50% - 50px);
+    background-color: var(--secondary-blue);
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 1.4rem;
+    /* font-weight: bold; */
+    line-height: 1.5rem;
+    color: var(--white);
+}
+.plans__container--card,
+.plan__container--basic-card div {
     padding-top: 35px;
 }
-.plans__container--card div h3 {
+.plans__container--card,
+.plan__container--basic-card div h3 {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     color: #000000;
 }
-.price {
+.price, .basic-price {
     font-size: 5.2rem;
     font-family: "Inter", sans-serif;
     font-weight: bold;
     line-height: 6.3rem;
-    text-align: center;
-    padding-bottom: 15px;
+    /* text-align: center; */
+    padding: 8px 0;
 }
 .price span {
     position: absolute;
-    top: 65px;
-    left: 25%;
+    top: 70px;
+    left: 30%; 
+    /* vertical-align: text-top; */
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.5rem;
     font-family: "Inter", sans-serif;
-    margin-bottom: 30px;
 }
-.ahorro {
+.basic-price span {
+    position: absolute;
+    top: 70px;
+    left: 30%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+.ahorro,
+.basic-specs {
     font-size: 1.2rem;
     font-family: "Inter", sans-serif;
     line-height: 1.5rem;
     text-align: center;
     font-weight: 500;
     color: #757575;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
-.boton {
+.boton,
+.basic-button {
+    width: 150px;
+    height: 48px;
     padding: 12px 16px;
     font-size: 1.4rem;
-    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-family: "DM Sans", sans-serif;
     line-height: 1.8rem;
     border: 2px solid var(--bitcoin-orange);
     border-radius: 4px;
     background-color: var(--off-white);
+    cursor: pointer;
+}
+.boton span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(./assets/icons/arrow-orange.png);
+    vertical-align: text-bottom;
+}
+.basic-button span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(./assets/icons/arrow-orange.png);
+    vertical-align: text-bottom;
+}
+.plan__container--deluxe-card {
+    width: 70%;
+    min-width: 195px;
+    max-width: 255px;
+    height: 250px;
+    position: relative;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--warm-black);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
+}
+.deluxe-plan {
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    left: calc(50% - 50px);
+    top: -15px;
+    background-color: #808080;
+    padding: 8px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    color: var(--white);
+}
+.deluxe-card {
+    padding-top: 35px;
+}
+.deluxe-card h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--off-white);
+}
+.deluxe-price {
+    font-size: 5.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 6.3rem;
+    text-align: center;
+    padding: 8px 0;
+    color: var(--white);
+}
+.deluxe-price span {
+    position: absolute;
+    top: 55px;
+    left: 24%;
+    font-size: 1.2rem;
+}
+.deluxe-specs {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #808080;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.deluxe-button {
+    width: 150px;
+    height: 50px;
+    padding: 12px 16px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.8rem;
+    border-radius: 4px;
+    background-color: var(--black);
+    border: 2px solid var(--bitcoin-orange);
+    color: var(--off-white);   
+    cursor: pointer;
+}
+.deluxe-button span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/icons/arrow-orange.png);
+    vertical-align: text-bottom;   
 }
