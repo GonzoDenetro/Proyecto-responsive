@@ -390,19 +390,34 @@ main .main__exchange-container {
     color: #757575;
     margin-bottom: 50px;
 }
-/* .plans__container {
-    width: 70%;
+.plans__container {
+    display: flex;
+    /* gap: 50px; */
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    /* width: 70%;
     height: auto;
-    margin: 0 auto;
-} */
+    margin: 0 auto; */
+} 
+.plans__container::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+
+}
+.plans__container::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
 .plans__container--card,
 .plan__container--basic-card {
     position: relative;
     width: 70%;
+    scroll-snap-align: center;
     min-width: 190px;
     max-width: 250px;
     height: 247px;
-    margin: 50px auto 0;
+    margin: 50px 15px 0;
     padding: 0 15px;
     text-align: center;
     border-radius: 10px;
@@ -514,11 +529,12 @@ main .main__exchange-container {
 }
 .plan__container--deluxe-card {
     width: 70%;
+    scroll-snap-align: center;
     min-width: 195px;
     max-width: 255px;
     height: 250px;
     position: relative;
-    margin: 50px auto 0;
+    margin: 50px 15px 0;
     padding: 0 15px;
     text-align: center;
     border-radius: 10px;
@@ -591,4 +607,9 @@ main .main__exchange-container {
     height: 24px;
     background-image: url(./assets/icons/arrow-orange.png);
     vertical-align: text-bottom;   
+}
+.bra {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
 }
