@@ -1,0 +1,67 @@
+.header__img {
+    width: 270px;
+    height: 40px;
+    margin-bottom: 30px;
+    align-self: center;
+}
+.header__title-container h1{
+    font-size: 3rem;
+}
+.header__title-container--p{
+    font-size: 1.7rem;
+}
+/* .main__exchange-container {
+    width: 930px;
+    display: flex;
+    margin:  0 auto;
+} */
+/* .main__exchange-container--tables {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+} */
+ /* .main__exchange-container--tables,*/ .main__currency-table { 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+.main__currency-table--title{
+    position: absolute;
+    top: -25px;
+    left: 4%;
+}
+.main__currency-table--title-2 {
+    position: absolute;
+    top: -50px;
+    left: 30%;
+}
+.currency-table--date {
+    position: absolute;
+    bottom: -10px;
+}
+.table-1 {
+    margin-right: 150px;
+} 
+/* TARJETAS */
+.product-cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 930px;
+}
+/* BITCOIN IMAGEN */
+.bitcoin-img__container {
+    background-attachment: fixed;
+    height: 70vh;
+}
+.bitcoin-img__container h2 {
+    font-size: 4rem;
+}
+/* PLANES */
+.plans__container {
+    justify-content: center;
+}
+.plans__container::-webkit-scrollbar {
+    background-color: var(--off-white);
+}
